@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,11 +26,13 @@ function App() {
       {
         sampleStudentData.map(
           (std) => {
-            return (
-              <div>
+            return(
+              <div className="flex w-full justify-center">
                 <div>{std.reg}</div>
                 <div>{std.name}</div>
                 <div>{std.date}</div>
+                <button>Edit</button>
+                <button>delete</button>
               </div>
             )
           }
