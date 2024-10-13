@@ -21,7 +21,19 @@ function App() {
 
   return (
     <>
-  
+      {
+        sampleStudentData.map(
+          (std) => {
+            return (
+              <div>
+                <div>{std.reg}</div>
+                <div>{std.name}</div>
+                <div>{std.date}</div>
+              </div>
+            )
+          }
+        )
+      }
     </>
   )
 }
